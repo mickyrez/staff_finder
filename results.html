@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js">
+</script>
+<script> 
+$(document).ready(function(){
+  $("#general_info_title").click(function(){
+    $("#general_info").slideToggle("slow");
+  });
+  $("#consultation_times_title").click(function(){
+    $("#consultation_times").slideToggle("slow");
+  });
+  $("#subjects_teaching_title").click(function(){
+    $("#subjects_teaching").slideToggle("slow");
+  });
+});
+</script>
+ 
+<style type="text/css">
+
+html {
+font-family: Flamauow, sans-serif, arial, calibri, helvetica;
+background-color: #F0F0F0;
+}
+
+
+#general_info_title,#consultation_times_title,#subjects_teaching_title
+{
+font-size: 30px;
+color: white;
+padding:10px;
+margin:5px;
+text-align:center;
+background-color:#4C565F;
+border:solid 1px #c3c3c3;
+}
+
+
+
+
+#general_info, #consultation_times, #subjects_teaching
+{
+color: black;
+background-color: #FFFFFF;
+text-align: left;
+padding:0px;
+margin-top: 5px;
+display:none;
+}
+
+
+
+</style>
+</head>
+<body>
+ 
+<div id="general_info_title">General Information
+<div id="general_info">
+	<b>Phone:</b><br />
+	<?php ?><br />
+	<b>Location:</b><br />
+	<?php ?> <br />
+	<b>Email(@uow.edu.au):</b><br />
+	<?php ?> <br />
+	
+</div>
+</div>
+
+<div id="consultation_times_title">Consultation Times
+<div id="consultation_times">
+	<b>Day 1:</b><br />
+	<?php ?><br />
+	<b>Day 2:</b><br />
+	<?php ?> <br />
+</div>
+</div>
+
+<div id="subjects_teaching_title">Subjects Teaching
+<div id="subjects_teaching">
+
+	
+</div>
+</div>
+
+</body>
+</html>
